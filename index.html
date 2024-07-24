@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Fullscreen background video */
+        #bgVideo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- Background video -->
+    <video autoplay muted loop id="bgVideo">
+        <source src="videos/bg.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    
+    <header>
+        <h1>Happy Birthday, Nancy!</h1>
+    </header>
+    
+    <main id="main-content">
+        <section class="page" id="page1">
+            <h2>Welcome to Your Special Day!</h2>
+            <p>This website is a gift to you, celebrating all the wonderful moments we've shared. I hope you enjoy it!</p>
+        </section>
+        <section class="page" id="page2">
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <img src="images/IMG_20240722_172712_094.jpg" alt="Photo 1">
+                <img src="images/IMG_20240722_172713_938.jpg" alt="Photo 2">
+                <img src="images/IMG_20240722_172615_909.jpg" alt="Photo 3">
+                <img src="images/IMG_20240722_172623_055.jpg" alt="Photo 4">
+                <img src="images/IMG_20240722_172627_837.jpg" alt="Photo 5">
+                <img src="images/IMG_20240722_172629_015.jpg" alt="Photo 6">
+                <img src="images/IMG_20240722_172640_861.jpg" alt="Photo 7">
+                <img src="images/IMG_20240722_172644_542.jpg" alt="Photo 8">
+                <img src="images/IMG_20240722_172646_137.jpg" alt="Photo 9">
+                <img src="images/IMG_20240722_172647_615.jpg" alt="Photo 10">
+                <img src="images/IMG_20240722_172649_051.jpg" alt="Photo 11">
+                <img src="images/IMG_20240722_172650_362.jpg" alt="Photo 12">
+                <img src="images/IMG_20240722_172652_008.jpg" alt="Photo 13">
+                <img src="images/IMG_20240722_172653_860.jpg" alt="Photo 14">
+                <img src="images/IMG_20240722_172655_595.jpg" alt="Photo 15">
+                <img src="images/IMG_20240722_172656_949.jpg" alt="Photo 16">
+                <img src="images/IMG_20240722_172658_110.jpg" alt="Photo 17">
+                <img src="images/IMG_20240722_172659_373.jpg" alt="Photo 18">
+                <img src="images/IMG_20240722_172706_449.jpg" alt="Photo 19">
+                <img src="images/IMG_20240722_172707_753.jpg" alt="Photo 20">
+                <img src="images/IMG_20240722_172707_753.jpg" alt="Photo 21">
+                <img src="images/IMG_20240722_172709_272.jpg" alt="Photo 22">
+            </div>
+        </section>
+        <section class="page" id="page3">
+            <h2>Messages</h2>
+            <p>Happy Birthday! You mean the world to me. Here's to many more wonderful years together!</p>
+        </section>
+        <section class="page" id="page4">
+            <h2>Video</h2>
+            <div class="video-container">
+                <video id="myVideo" width="600">
+                    <source src="videos/VID_27320624_041554_405.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="controls">
+                    <button id="playPauseBtn">Play</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav>
+        <button id="prevBtn" onclick="prevPage()">Previous</button>
+        <button id="nextBtn" onclick="nextPage()">Next</button>
+    </nav>
+    <footer>
+        <p>Made with ❤️ by Vishu</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
